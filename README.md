@@ -1,5 +1,6 @@
-# peripersonal-space-margin-of-safety-data
+# Peripersonal Space and Margin of Safety Data
 
+This repository stores the data that have been acquired for the PLOS submission called _Peripersonal Space and Margin of Safety Around the Body: Learning Visuo-tactile Associations in a Humanoid Robot with Artificial Skin_ .
 
 ## Requirements
 
