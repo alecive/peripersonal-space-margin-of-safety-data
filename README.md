@@ -12,7 +12,7 @@ To clone this repository, the user needs a working `git` client installed on his
 The repository is divided into three subfolders. Each of them deals with each of the three steps shown in the Results section of the paper. In particular:
 
  * `1-montecarlo-simulation-of-a-single-taxel-model` stores the "Learning in a single taxel model" data (i.e. the Matlab simulation of a single taxel);
- * `2-learning-on-the-iCub` delas with the real learning experiments on the iCub robot. It is subdivided into:
+ * `2-learning-on-the-iCub` deals with the real learning experiments on the iCub robot. It is subdivided into:
    * Tactile-motor learning via double touch
    * Tactile-visual learning from double touch
    * Tactile-visual learning using external objects
