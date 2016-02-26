@@ -1,6 +1,6 @@
 # Peripersonal Space and Margin of Safety Data
 
-This repository stores data and scripts accompanying a PLoS Comp. Biology submission entitled _Peripersonal Space and Margin of Safety Around the Body: Learning Visuo-tactile Associations in a Humanoid Robot with Artificial Skin_ by Alessandro Roncone, Matej Hoffmann, Ugo Pattacini, Luciano Fadiga, and Giorgio Metta.
+This repository stores data and scripts accompanying a PLoS ONE submission entitled _Peripersonal Space and Margin of Safety Around the Body: Learning Visuo-tactile Associations in a Humanoid Robot with Artificial Skin_ by Alessandro Roncone, Matej Hoffmann, Ugo Pattacini, Luciano Fadiga, and Giorgio Metta.
 
 ## Requirements
 
