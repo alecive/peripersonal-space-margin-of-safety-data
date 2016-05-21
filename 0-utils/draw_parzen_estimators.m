@@ -36,7 +36,7 @@ function [x y p] = draw_parzen_estimators(taxel,viewPoint)
         zCX  = 1;
         zCY  = 1;
     else
-        H     = taxel.HLOG111;
+        H     = taxel.H111;
 
         NaNness=0;
 
@@ -55,8 +55,8 @@ function [x y p] = draw_parzen_estimators(taxel,viewPoint)
             return;
         end
 
-        H011  = taxel.HLOG011;
-        H101  = taxel.HLOG101;
+        H011  = taxel.H011;
+        H101  = taxel.H101;
         nSamplX = size(H,1);
         extX  = taxel.extX;
         binWidthX = taxel.binWidthX;
@@ -117,7 +117,7 @@ function [x y p] = draw_parzen_estimators(taxel,viewPoint)
         caxis([0.0 1.0]);
         axis([taxel.extX(1) taxel.extX(2) taxel.extY(1) taxel.extY(2) 0.0 1]);
         viewPoint(3);             % viewPoint(-37.5,30)
-        grid on;   
+        grid on;
 
         clear i ii j jj x_0 y_0
 

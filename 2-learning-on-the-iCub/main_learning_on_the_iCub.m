@@ -36,7 +36,7 @@ else
             end
         end
 
-        F1.taxels(i).HLOG111 = F1.taxels(i).H;
+        F1.taxels(i).H111 = F1.taxels(i).H;
     end
     F1.nEvents     = size(E.evnts,1)+size(F.evnts,1);
     F1.nSamplesTot = sum(sum(F1.taxels(2).posH+F1.taxels(2).negH));
@@ -61,7 +61,7 @@ else
             end
         end
 
-        F2.taxels(i).HLOG111 = F2.taxels(i).H;
+        F2.taxels(i).H111 = F2.taxels(i).H;
     end
     F2.nEvents     = size(G.evnts,1);
     F2.nSamplesTot = sum(sum(F2.taxels(2).posH+F2.taxels(2).negH));
@@ -90,7 +90,7 @@ else
             end
         end
 
-        F3.taxels(i).HLOG111 = F3.taxels(i).H;
+        F3.taxels(i).H111 = F3.taxels(i).H;
     end
     F3.nEvents     = size(H.evnts,1)+size(I.evnts,1);
     F3.nSamplesTot = sum(sum(F3.taxels(2).posH+F3.taxels(2).negH));
@@ -119,7 +119,7 @@ else
             end
         end
 
-        F4.taxels(i).HLOG111 = F4.taxels(i).H;
+        F4.taxels(i).H111 = F4.taxels(i).H;
     end
     F4.nEvents     = size(J.evnts,1)+size(K.evnts,1);
     F4.nSamplesTot = sum(sum(F4.taxels(2).posH+F4.taxels(2).negH));
@@ -149,7 +149,7 @@ else
             end
         end
 
-        F5.taxels(i).HLOG111 = F5.taxels(i).H;
+        F5.taxels(i).H111 = F5.taxels(i).H;
     end
     F5.nEvents     = size(C.evnts,1)+size(D.evnts,1);
     F5.nSamplesTot = sum(sum(F5.taxels(2).posH+F5.taxels(2).negH));
