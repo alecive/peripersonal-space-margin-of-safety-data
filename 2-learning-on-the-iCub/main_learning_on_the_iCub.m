@@ -156,19 +156,19 @@ else
 end
         
 %% PLOT THE RESPONSES
-    disp(sprintf('Displaying stuff...'));
+    disp(sprintf('Displaying data...'));
     % TACTILE MOTOR LEARNING - DOUBLE TOUCH - LEFT FOREARM - INTERNAL
         disp(F1.protocol);
         plot_taxel_response(F1.taxels,2);
         export_fig(gcf,strcat('Fig4'),'-eps','-png');
 
-        % figure('Position',[1450 100 800 700],'Color','w');
+        % figure('Position',[250 100 800 700],'Color','w');
         % draw_parzen_estimators(F1.taxels(2),'111'); view(3);
         % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
         % axis square
         % export_fig(gcf,strcat('Fig4'),'-eps','-png');
 
-        % figure('Position',[1450 100 500 500],'Color','w');
+        % figure('Position',[250 100 500 500],'Color','w');
         % draw_parzen_estimators(F1.taxels(2),'110');view(0,90);
         % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
         % axis square
@@ -179,20 +179,33 @@ end
         plot_taxel_response(F2.taxels,1);
         export_fig(gcf,strcat('Fig5'),'-eps','-png');
 
-    %     figure('Position',[1450 100 800 700],'Color','w');
-    %     draw_parzen_estimators(F2.taxels(1),'111'); view(3);
-    %     set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
-    %     axis square
-    %     export_fig(gcf,strcat('results/',F2.protocol,'1'),'-eps','-png');
+        % figure('Position',[250 100 800 700],'Color','w');
+        % draw_parzen_estimators(F2.taxels(1),'111'); view(3);
+        % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
+        % axis square
+        % export_fig(gcf,strcat('results/',F2.protocol,'1'),'-eps','-png');
 
-    %     figure('Position',[1450 100 500 500],'Color','w');
-    %     draw_parzen_estimators(F2.taxels(1),'110');view(0,90);
-    %     set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
-    %     axis square
-    %     export_fig(gcf,strcat('results/',F2.protocol,'2'),'-eps','-png','-painters');
+        % figure('Position',[250 100 500 500],'Color','w');
+        % draw_parzen_estimators(F2.taxels(1),'110');view(0,90);
+        % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
+        % axis square
+        % export_fig(gcf,strcat('results/',F2.protocol,'2'),'-eps','-png','-painters');
+
+    % TACTILE VISUAL LEARNING
+        disp(F3.protocol);
+        disp('H:');
+        disp(F3.taxels(2).H);
+
+        disp(F4.protocol);
+        disp('H:');
+        disp(F4.taxels(2).H);
+
+        disp(F5.protocol);
+        disp('H:');
+        disp(F5.taxels(2).H);
 
     % TACTILE VISUAL LEARNING - EXTERNAL OBJECTS 
-        figure('Position',[1450 100 1785 500],'Color','w');
+        figure('Position',[250 100 1785 500],'Color','w');
         
         subplot(1,3,1);
         draw_parzen_estimators(F3.taxels(2),'110');view(0,90);
@@ -213,56 +226,56 @@ end
         export_fig(gcf,strcat('Fig7'),'-eps','-png','-painters');
 
     % TACTILE VISUAL LEARNING - EXTERNAL OBJECTS FIG A
-    %     disp(F3.protocol);
-    %     plot_taxel_response(F3.taxels,2);
-    %     export_fig(gcf,strcat('results/',F3.protocol),'-eps','-png');
+        % disp(F3.protocol);
+        % plot_taxel_response(F3.taxels,2);
+        % export_fig(gcf,strcat('results/',F3.protocol),'-eps','-png');
 
-    %     figure('Position',[1450 100 800 700],'Color','w');
-    %     draw_parzen_estimators(F3.taxels(2),'111'); view(3);
-    %     set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
-    %     axis square
-    %     export_fig(gcf,strcat('results/',F3.protocol,'1'),'-eps','-png');
+        % figure('Position',[250 100 800 700],'Color','w');
+        % draw_parzen_estimators(F3.taxels(2),'111'); view(3);
+        % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
+        % axis square
+        % export_fig(gcf,strcat('results/',F3.protocol,'1'),'-eps','-png');
 
-        figure('Position',[1450 100 500 500],'Color','w');
+        figure('Position',[250 100 500 500],'Color','w');
         draw_parzen_estimators(F3.taxels(2),'110');view(0,90);
         set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
         axis square
-        export_fig(gcf,strcat('Fig7A'),'-png','-painters');
+        export_fig(gcf,strcat('Fig7A'),'-eps','-png','-painters');
 
     % TACTILE VISUAL LEARNING - EXTERNAL OBJECTS FIG B
-    %     disp(F4.protocol);
-    %     plot_taxel_response(F4.taxels,2);
-    %     export_fig(gcf,strcat('results/',F4.protocol),'-eps','-png');
+        % disp(F4.protocol);
+        % plot_taxel_response(F4.taxels,2);
+        % export_fig(gcf,strcat('results/',F4.protocol),'-eps','-png');
 
-    %     figure('Position',[1450 100 800 700],'Color','w');
-    %     draw_parzen_estimators(F4.taxels(2),'111'); view(3);
-    %     set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
-    %     axis square
-    %     export_fig(gcf,strcat('results/',F4.protocol,'1'),'-eps','-png');
+        % figure('Position',[250 100 800 700],'Color','w');
+        % draw_parzen_estimators(F4.taxels(2),'111'); view(3);
+        % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
+        % axis square
+        % export_fig(gcf,strcat('results/',F4.protocol,'1'),'-eps','-png');
 
-        figure('Position',[1450 100 500 500],'Color','w');
+        figure('Position',[250 100 500 500],'Color','w');
         draw_parzen_estimators(F4.taxels(2),'110');view(0,90);
         set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
         axis square
-        export_fig(gcf,strcat('Fig7B'),'-png','-painters');
+        export_fig(gcf,strcat('Fig7B'),'-eps','-png','-painters');
 
     % TACTILE VISUAL LEARNING - EXTERNAL OBJECTS FIG C
-    %     disp(F5.protocol);
-    %     plot_taxel_response(F5.taxels,2);
-    %     export_fig(gcf,strcat('results/',F5.protocol),'-eps','-png');
+        % disp(F5.protocol);
+        % plot_taxel_response(F5.taxels,2);
+        % export_fig(gcf,strcat('results/',F5.protocol),'-eps','-png');
 
-    %     figure('Position',[1450 100 800 700],'Color','w');
-    %     draw_parzen_estimators(F5.taxels(2),'111'); view(3);
-    %     set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
-    %     axis square
-    %     export_fig(gcf,strcat('results/',F5.protocol,'1'),'-eps','-png');
+        % figure('Position',[250 100 800 700],'Color','w');
+        % draw_parzen_estimators(F5.taxels(2),'111'); view(3);
+        % set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
+        % axis square
+        % export_fig(gcf,strcat('results/',F5.protocol,'1'),'-eps','-png');
 
-        figure('Position',[1450 100 500 500],'Color','w');
+        figure('Position',[250 100 500 500],'Color','w');
         draw_parzen_estimators(F5.taxels(2),'110');view(0,90);
         set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
         axis square
-        export_fig(gcf,strcat('Fig7C'),'-png','-painters');
+        export_fig(gcf,strcat('Fig7C'),'-eps','-png','-painters');
 
     disp('DONE.');
 
-clear i j k;
+clear i j k ans;

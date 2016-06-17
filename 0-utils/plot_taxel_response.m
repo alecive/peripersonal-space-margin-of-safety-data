@@ -11,12 +11,12 @@ function plot_taxel_response(taxels,txl2Plot)
     % disp(taxels(txl2Plot).posH)
     % disp('negH:')
     % disp(taxels(txl2Plot).negH)
-    disp('H:')
-    disp(taxels(txl2Plot).H)
+    disp('H:');
+    disp(taxels(txl2Plot).H);
     % disp('HLOG111:')
     % disp(taxels(txl2Plot).HLOG111)
 
-    figure('Position',[1450 100 1400 700],'Color','w');
+    figure('Position',[250 100 1400 700],'Color','w');
     subplot(4,3,[1:2 4:5 7:8 10:11]); hold on; grid on;
     draw_parzen_estimators(taxels(txl2Plot),'111'); view(3); % it is equal to view(-37.5,30)
     set(gca,'YTick',[0,0.4,0.8,1.2],'YTickLabel',{'0','1','2','3'},'FontSize',14);
