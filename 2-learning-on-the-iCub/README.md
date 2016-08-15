@@ -21,11 +21,21 @@ The script does the following:
 
 It is also possible to show the results from all the other taxels that have been trained. The `experiments.mat` file stores information of all the 16 different experimental sessions that have been performed. Most of them are not shown in the paper, but they are included here for completeness.
 
-## `main_evolution_of_the_learning_process.m`
+## `main_systematic_offsets`
 
 This script will produce Figure 8:
- 
- * Figure 8: Evolution of the learning process. The progress of the learned representations belonging to two adjacent taxels of the internal part of the left forearm is shown. For each of the two taxels (taxel nr. 3 on the left column and taxel nr. 4 on the right column), snapshots of their respective representations after 1, 4 and 53 trials are depicted.
+
+ * Fig 8. Systematic offsets computed during tactile-visual learning using external objects. The distance offset in the learned representation of ten taxels (three on the inner part of the left forearm, FALi; three on the outer part, FALo; four in the right palm, PR) is depicted in red. For each of the three body parts under consideration, average offset and standard deviation are depicted in blue.
+
+The script does the following:
+
+
+
+## `main_evolution_of_the_learning_process.m`
+
+This script will produce Figure 9:
+
+ * Figure 9: Evolution of the learning process. The progress of the learned representations belonging to two adjacent taxels of the internal part of the left forearm is shown. For each of the two taxels (taxel nr. 3 on the left column and taxel nr. 4 on the right column), snapshots of their respective representations after 1, 4 and 53 trials are depicted.
 
 The script does the following:
 
